@@ -1,6 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        DrinkMaker drinkMaker = new DrinkMaker();
+        OrderConverter orderConverter = new OrderConverter();
+        CoffeeMachine coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter);
+        coffeeMachine.start();
     }
 }
