@@ -16,6 +16,6 @@ public class DrinkMaker implements DrinkMakerInterface {
         if(sugars == ':') {
             return "Drink maker makes 1 " + drink + " with no sugar - and therefore no stick";
         }
-        return "Drink maker makes 1 " + drink +  " with " + sugars +  " sugar and a stick";
+        return "Drink maker makes 1 " + drink +  " with " + sugars +  " sugars and a stick";
     }
 }

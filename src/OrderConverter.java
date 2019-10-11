@@ -1,22 +1,22 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class OrderConverter implements OrderConverterInterface {
-    ArrayList<String>  baseString = new ArrayList<>();
     public String convertOrder(Order order) {
+        char drinkTypeValue = 'N';
         switch (order.drinkType) {
-            case TEA: baseString.add("T:");
+            case TEA: drinkTypeValue = 'T';
             break;
-            case CHOCOLATE: baseString.add("H:");
+            case CHOCOLATE: drinkTypeValue = 'H';
             break;
-            case COFFEE: baseString.add("C:");
+            case COFFEE: drinkTypeValue = 'C';
             break;
         }
-        if (order.sugars == 0) {
-            baseString.add(":");
-        } else {
-            baseString.add(order.sugars + ":0");
+
+        String stick = "";
+        String sugars = "";
+        if (order.sugars > 0) {
+            stick = "0";
+            sugars = String.valueOf(order.sugars);
         }
-        return Arrays.toString(baseString.toArray()).replace(",","").replace(" ","").replace("[","").replace("]","");
+
+        return String.format("%c:%s:%s", drinkTypeValue, sugars, stick);
     }
 }

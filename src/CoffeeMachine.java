@@ -1,17 +1,21 @@
-public class CoffeeMachine {
-    DrinkMakerInterface drinkMaker;
-    OrderConverterInterface orderConverter;
-    Order orderClass = new Order(1,DrinkType.CHOCOLATE);
+public class CoffeeMachine implements CoffeeMachineInterface{
+    private DrinkMakerInterface drinkMaker;
+    private OrderConverterInterface orderConverter;
+    private OrderServiceInterface orderService;
 
-    public CoffeeMachine(DrinkMakerInterface drinkMaker, OrderConverterInterface orderConverter) {
+    public CoffeeMachine(DrinkMakerInterface drinkMaker, OrderConverterInterface orderConverter, OrderServiceInterface orderService) {
         this.drinkMaker = drinkMaker;
         this.orderConverter = orderConverter;
+        this.orderService = orderService;
     }
 
-    public void start() {
-        Order order = orderClass.createOrder();
-        String input = orderConverter.convertOrder(order);
-        String output = drinkMaker.makeDrink(input);
+    public void processUserInput(String drinkInput, String sugarInput) {
+        Order order = orderService.createOrder(drinkInput,sugarInput);
+
+        String drinkMakerProtocolMessage = orderConverter.convertOrder(order);
+        System.out.println(drinkMakerProtocolMessage);
+
+        String output = drinkMaker.makeDrink(drinkMakerProtocolMessage);
         System.out.println(output);
     }
 }
