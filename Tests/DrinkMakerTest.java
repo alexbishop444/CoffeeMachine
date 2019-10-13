@@ -23,13 +23,13 @@ public class DrinkMakerTest {
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public void makeCoffeeWith55Sugars() {
-        Order order = new Order(55,DrinkType.COFFEE);
+    public void makeHotChocolateWith55Sugars() {
+        Order order = new Order(55,DrinkType.CHOCOLATE);
         OrderConverter converter = new OrderConverter();
         String orderString = converter.convertOrder(order);
         DrinkMaker drinkMaker = new DrinkMaker();
         String actual = drinkMaker.makeDrink(orderString);
-        String expected = "Drink maker makes 1 coffee with 55 sugars and a stick";
+        String expected = "Drink maker makes 1 hot chocolate with 55 sugars and a stick";
         Assert.assertEquals(expected,actual);
     }
 }

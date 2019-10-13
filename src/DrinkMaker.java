@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class DrinkMaker implements DrinkMakerInterface {
@@ -11,12 +12,12 @@ public class DrinkMaker implements DrinkMakerInterface {
         switch (drinkFromOrder) {
             case "T": drink = "tea";
             break;
-            case "H": drink = "chocolate";
+            case "H": drink = "hot chocolate";
             break;
             case "C": drink = "coffee";
             break;
         }
-        if(sugars.equals(":")) {
+        if(sugars.equals("")) {
             return "Drink maker makes 1 " + drink + " with no sugar - and therefore no stick";
         }
         return "Drink maker makes 1 " + drink +  " with " + sugars +  " sugars and a stick";
