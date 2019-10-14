@@ -1,5 +1,5 @@
 public class OrderService implements OrderServiceInterface {
-    public Order createOrder(String drinkInput, String sugarInput) {
+    public Order createOrder(String drinkInput, String sugarInput, String moneyInput) {
 
         DrinkType drinkType = DrinkType.NONE;
         switch (drinkInput) {
@@ -16,6 +16,8 @@ public class OrderService implements OrderServiceInterface {
 
         int sugars = Integer.parseInt(sugarInput);
 
-        return new Order(sugars, drinkType);
+        double money = Double.parseDouble(moneyInput);
+
+        return new Order(sugars, drinkType, money);
     }
 }

@@ -9,8 +9,8 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         this.orderService = orderService;
     }
 
-    public void processUserInput(String drinkInput, String sugarInput) {
-        Order order = orderService.createOrder(drinkInput,sugarInput);
+    public void processUserInput(String drinkInput, String sugarInput, String moneyInput) {
+        Order order = orderService.createOrder(drinkInput,sugarInput,moneyInput);
 
         String drinkMakerProtocolMessage = orderConverter.convertOrder(order);
         System.out.println(drinkMakerProtocolMessage);
