@@ -1,8 +1,7 @@
 public class OrderConverter implements OrderConverterInterface {
     public String convertOrder(Order order) {
-        char money = 'N';
         char drinkTypeValue = 'N';
-        switch (order.drinkType) {
+        switch (order.drink.drinktype) {
             case TEA:
                 drinkTypeValue = 'T';
                 break;
@@ -20,12 +19,7 @@ public class OrderConverter implements OrderConverterInterface {
             stick = "0";
             sugars = String.valueOf(order.sugars);
         }
-        if (order.money < order.drinkType.getValue()) {
-            money = 'N';
-        } else {
-            money = 'Y';
-        }
 
-        return String.format("%c:%s:%s:%c", drinkTypeValue, sugars, stick,money);
+        return String.format("%c:%s:%s", drinkTypeValue, sugars, stick);
     }
 }

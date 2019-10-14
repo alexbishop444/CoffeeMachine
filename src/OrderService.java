@@ -1,23 +1,24 @@
+import java.math.BigDecimal;
+
 public class OrderService implements OrderServiceInterface {
     public Order createOrder(String drinkInput, String sugarInput, String moneyInput) {
 
-        DrinkType drinkType = DrinkType.NONE;
+        Drink drink = new Drink(DrinkType.COFFEE,new BigDecimal(0.6));
         switch (drinkInput) {
             case "1":
-                drinkType = DrinkType.COFFEE;
+                drink = new Drink(DrinkType.COFFEE,new BigDecimal(0.6));
                 break;
             case "2":
-                drinkType = DrinkType.TEA;
+                drink = new Drink(DrinkType.TEA,new BigDecimal(0.4));
                 break;
             case "3":
-                drinkType = DrinkType.CHOCOLATE;
+                drink = new Drink(DrinkType.CHOCOLATE,new BigDecimal(0.5));
                 break;
         }
 
         int sugars = Integer.parseInt(sugarInput);
+        BigDecimal money = BigDecimal.valueOf(Double.parseDouble(moneyInput));
 
-        double money = Double.parseDouble(moneyInput);
-
-        return new Order(sugars, drinkType, money);
+        return new Order(sugars, drink, money);
     }
 }

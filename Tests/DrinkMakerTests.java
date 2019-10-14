@@ -1,10 +1,12 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class DrinkMakerTest {
+import java.math.BigDecimal;
+
+public class DrinkMakerTests {
     @Test
     public void makeTeaWithOneSugar() {
-        Order order = new Order(1,DrinkType.TEA,1);
+        Order order = new Order(1,new Drink(DrinkType.TEA,new BigDecimal(0.5)),new BigDecimal(0.5));
         OrderConverter converter = new OrderConverter();
         String orderString = converter.convertOrder(order);
         DrinkMaker drinkMaker = new DrinkMaker();
@@ -14,7 +16,7 @@ public class DrinkMakerTest {
     }
     @Test
     public void makeCoffeeWithNoSugars() {
-        Order order = new Order(0,DrinkType.COFFEE,1);
+        Order order = new Order(0,new Drink(DrinkType.COFFEE,new BigDecimal(0.5)),new BigDecimal(0.5));
         OrderConverter converter = new OrderConverter();
         String orderString = converter.convertOrder(order);
         DrinkMaker drinkMaker = new DrinkMaker();
@@ -24,7 +26,7 @@ public class DrinkMakerTest {
     }
     @Test
     public void makeHotChocolateWith55Sugars() {
-        Order order = new Order(55,DrinkType.CHOCOLATE,1);
+        Order order = new Order(55,new Drink(DrinkType.CHOCOLATE,new BigDecimal(0.5)),new BigDecimal(0.5));
         OrderConverter converter = new OrderConverter();
         String orderString = converter.convertOrder(order);
         DrinkMaker drinkMaker = new DrinkMaker();
@@ -34,7 +36,7 @@ public class DrinkMakerTest {
     }
     @Test
     public void underPaidTest() {
-        Order order = new Order(55,DrinkType.CHOCOLATE,0.1);
+        Order order = new Order(1,new Drink(DrinkType.CHOCOLATE,new BigDecimal(0.5)),new BigDecimal(0.4));
         OrderConverter converter = new OrderConverter();
         String orderString = converter.convertOrder(order);
         DrinkMaker drinkMaker = new DrinkMaker();
