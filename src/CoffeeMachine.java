@@ -9,13 +9,18 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         this.orderService = orderService;
     }
 
-    public void processUserInput(String drinkInput, String sugarInput, String moneyInput) {
+    public Boolean processUserInput(String drinkInput, String sugarInput, String moneyInput) {
         Order order = orderService.createOrder(drinkInput,sugarInput,moneyInput);
 
+        if(order.drink.price.compareTo(order.money) == 1) {
+            System.out.println("You dont have enough money");
+            return false;
+        }
         String drinkMakerProtocolMessage = orderConverter.convertOrder(order);
         System.out.println(drinkMakerProtocolMessage);
 
         String output = drinkMaker.makeDrink(drinkMakerProtocolMessage);
         System.out.println(output);
+        return true;
     }
 }

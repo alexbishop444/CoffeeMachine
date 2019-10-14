@@ -1,16 +1,16 @@
 public enum DrinkType {
     NONE(0),
-    COFFEE(0.6),
-    TEA(0.4),
-    CHOCOLATE(0.5);
+    COFFEE(1),
+    TEA(2),
+    CHOCOLATE(3);
 
-    public double getValue() {
+    public int getValue() {
         return value;
     }
 
-    private double value;
+    private int value;
 
-    private DrinkType(double value) {
+    private DrinkType(int value) {
         this.value = value;
     }
 
