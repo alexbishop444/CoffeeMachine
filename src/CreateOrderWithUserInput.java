@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UserInput {
+public class CreateOrderWithUserInput {
     Scanner scanner = new Scanner(System.in);
 
     public void runUserInput(CoffeeMachineInterface coffeeMachineInterface) {
@@ -11,6 +11,9 @@ public class UserInput {
         System.out.println("How many sugars?");
         String sugarInput = scanner.nextLine();
 
-        coffeeMachineInterface.processUserInput(drinkInput, sugarInput);
+        System.out.println("Enter money");
+        String moneyInput = scanner.nextLine();
+
+        coffeeMachineInterface.processUserInput(drinkInput, sugarInput, moneyInput);
     }
 }
