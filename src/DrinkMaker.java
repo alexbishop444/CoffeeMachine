@@ -4,10 +4,10 @@ import java.util.Arrays;
 public class DrinkMaker implements DrinkMakerInterface {
 
     public String makeDrink(String order) {
-        String[] test = order.split(":",5);
-//        System.out.println(Arrays.toString(test));
-        String drinkFromOrder = test[0];
-        String sugars = test[1];
+        String[] orderArray = order.split(":",5);
+//        System.out.println(Arrays.toString(orderArray));
+        String drinkFromOrder = orderArray[0];
+        String sugars = orderArray[1];
         String drink = "";
         switch (drinkFromOrder) {
             case "T": drink = "tea";
