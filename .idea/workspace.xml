@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="230f529e-7086-4da6-b9bf-9dcd36cefed9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tests/OrderServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/OrderServiceTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="230f529e-7086-4da6-b9bf-9dcd36cefed9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +33,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DrinkList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/DrinkMakerTests.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/OrderServiceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+            <state relative-caret-position="420">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -258,23 +265,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570664015165</updated>
-      <workItem from="1570664037916" duration="27233000" />
+      <workItem from="1570664037916" duration="28240000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderServiceTests_makeTeaWithOneSugar - 2019.10.14 at 16h 00m 22s.xml">
-      <configuration name="OrderServiceTests.makeTeaWithOneSugar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderServiceTests_makeTeaWithOneSugar - 2019.10.14 at 16h 00m 35s.xml">
-      <configuration name="OrderServiceTests.makeTeaWithOneSugar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderServiceTests_makeTeaWithOneSugar - 2019.10.14 at 16h 00m 48s.xml">
-      <configuration name="OrderServiceTests.makeTeaWithOneSugar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderServiceTests_makeTeaWithOneSugar - 2019.10.14 at 16h 01m 01s.xml">
-      <configuration name="OrderServiceTests.makeTeaWithOneSugar" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_CoffeeMachine - 2019.10.14 at 16h 01m 30s.xml">
       <configuration name="All in CoffeeMachine" configurationId="JUnit" />
     </history-entry>
@@ -293,9 +288,21 @@
     <history-entry file="OrderServiceTests_makeTeaWithOneSugar - 2019.10.14 at 16h 06m 20s.xml">
       <configuration name="OrderServiceTests.makeTeaWithOneSugar" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OrderServiceTests - 2019.10.14 at 16h 06m 56s.xml">
+      <configuration name="OrderServiceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderServiceTests - 2019.10.14 at 16h 07m 12s.xml">
+      <configuration name="OrderServiceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderServiceTests - 2019.10.14 at 16h 07m 21s.xml">
+      <configuration name="OrderServiceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CoffeeMachine - 2019.10.14 at 16h 08m 49s.xml">
+      <configuration name="All in CoffeeMachine" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27233000" />
+    <option name="totallyTimeSpent" value="28240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -306,17 +313,17 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.20510204" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.21632653" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47142857" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47142857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoffeeMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/DrinkMakerTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -526,11 +526,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/OrderServiceTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
