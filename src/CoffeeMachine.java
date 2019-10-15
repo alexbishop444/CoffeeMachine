@@ -2,11 +2,13 @@ public class CoffeeMachine implements CoffeeMachineInterface{
     private DrinkMakerInterface drinkMaker;
     private OrderConverterInterface orderConverter;
     private OrderServiceInterface orderService;
+    private DrinkListInterface drinkList;
 
-    public CoffeeMachine(DrinkMakerInterface drinkMaker, OrderConverterInterface orderConverter, OrderServiceInterface orderService) {
+    public CoffeeMachine(DrinkMakerInterface drinkMaker, OrderConverterInterface orderConverter, OrderServiceInterface orderService, DrinkListInterface drinkList) {
         this.drinkMaker = drinkMaker;
         this.orderConverter = orderConverter;
         this.orderService = orderService;
+        this.drinkList = drinkList;
     }
 
     public Boolean processUserInput(String drinkInput, String sugarInput, String moneyInput) {

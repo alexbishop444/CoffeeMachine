@@ -4,7 +4,8 @@ public class Main {
         DrinkMakerInterface drinkMaker = new DrinkMaker();
         OrderConverterInterface orderConverter = new OrderConverter();
         OrderServiceInterface orderService = new OrderService();
-        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService);
+        DrinkListInterface drinkList = new DrinkList();
+        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,drinkList);
         CreateOrderWithUserInput start = new CreateOrderWithUserInput();
         start.runUserInput(coffeeMachine);
     }
