@@ -2,17 +2,18 @@ import java.math.BigDecimal;
 
 public class OrderService implements OrderServiceInterface {
     public Order createOrder(String drinkInput, String sugarInput, String moneyInput) {
+        Drink[] drinks = new DrinkList().buildDrinksList();
 
-        Drink drink = new Drink(DrinkType.COFFEE,new BigDecimal("0.6"));
+        Drink drink = drinks[0];
         switch (drinkInput) {
             case "1":
-                drink = new Drink(DrinkType.COFFEE,new BigDecimal("0.6"));
+                drink = drinks[0];
                 break;
             case "2":
-                drink = new Drink(DrinkType.TEA,new BigDecimal("0.4"));
+                drink = drinks[1];
                 break;
             case "3":
-                drink = new Drink(DrinkType.CHOCOLATE,new BigDecimal("0.5"));
+                drink = drinks[2];
                 break;
         }
 

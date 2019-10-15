@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 
-public class DrinkList {
-    private Drink[] drinks = new Drink[2];
+public class DrinkList implements DrinkListInterface {
+    private Drink[] drinks = new Drink[3];
 
     public Drink[] buildDrinksList() {
         drinks[0] = new Drink(DrinkType.COFFEE,new BigDecimal("0.6"));
