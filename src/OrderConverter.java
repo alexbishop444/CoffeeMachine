@@ -1,6 +1,9 @@
+import Models.Order;
+
 public class OrderConverter implements OrderConverterInterface {
     public String convertOrder(Order order) {
         char drinkTypeValue = 'N';
+        String extraHotValue = "";
         switch (order.drink.drinktype) {
             case TEA:
                 drinkTypeValue = 'T';
@@ -11,6 +14,9 @@ public class OrderConverter implements OrderConverterInterface {
             case COFFEE:
                 drinkTypeValue = 'C';
                 break;
+            case ORANGE:
+                drinkTypeValue = 'O';
+                break;
         }
 
         String stick = "";
@@ -20,6 +26,10 @@ public class OrderConverter implements OrderConverterInterface {
             sugars = String.valueOf(order.sugars);
         }
 
-        return String.format("%c:%s:%s", drinkTypeValue, sugars, stick);
+        if(order.extraHot) {
+            extraHotValue = "h";
+        }
+
+        return String.format("%c%s:%s:%s", drinkTypeValue, extraHotValue, sugars, stick);
     }
 }
