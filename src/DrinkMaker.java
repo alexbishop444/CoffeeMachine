@@ -3,23 +3,36 @@ import java.util.Arrays;
 
 public class DrinkMaker implements DrinkMakerInterface {
 
+    //Split the message between multiple methods?
+
     public String makeDrink(String order) {
         String[] orderArray = order.split(":",5);
-//        System.out.println(Arrays.toString(orderArray));
-        String drinkFromOrder = orderArray[0];
+        char[] drinkFromOrder = orderArray[0].toCharArray();
+        char drinkType = drinkFromOrder[0];
+        char extraHot = 'N';
+        if(drinkFromOrder.length > 1) {
+            extraHot = drinkFromOrder[1];
+        }
+        String sugarMessage = " with no sugar - and therefore no stick";
         String sugars = orderArray[1];
         String drink = "";
-        switch (drinkFromOrder) {
-            case "T": drink = "tea";
+        switch (drinkType) {
+            case 'T': drink = "tea";
             break;
-            case "H": drink = "hot chocolate";
+            case 'H': drink = "hot chocolate";
             break;
-            case "C": drink = "coffee";
+            case 'C': drink = "coffee";
+            break;
+            case 'O': drink = "orange juice";
             break;
         }
-        if(sugars.equals("")) {
-            return "Drink maker makes 1 " + drink + " with no sugar - and therefore no stick";
+        String willMake = " makes 1 " + drink;
+        if(!sugars.equals("")) {
+            sugarMessage = " with " + sugars + " sugars and a stick";
         }
-        return "Drink maker makes 1 " + drink +  " with " + sugars +  " sugars and a stick";
+        if(extraHot == 'h') {
+            willMake = " makes an extra hot " + drink;
+        }
+        return "Models.Drink maker" + willMake + sugarMessage;
     }
 }

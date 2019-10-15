@@ -1,9 +1,18 @@
+import Models.Drink;
+import Models.Order;
+
 import java.math.BigDecimal;
 
 public class OrderService implements OrderServiceInterface {
-    public Order createOrder(String drinkInput, String sugarInput, String moneyInput) {
-        Drink[] drinks = new DrinkList().buildDrinksList();
+    private DrinkListInterface drinkList;
+    public OrderService(DrinkListInterface drinkList) {
+        this.drinkList = drinkList;
+    }
 
+    public Order createOrder(String drinkInput, String sugarInput, String moneyInput, String extraHotInput) {
+        Drink[] drinks = drinkList.getDrinks();
+
+        boolean extraHot = false;
         Drink drink = drinks[0];
         switch (drinkInput) {
             case "1":
@@ -15,11 +24,17 @@ public class OrderService implements OrderServiceInterface {
             case "3":
                 drink = drinks[2];
                 break;
+            case "4":
+                drink = drinks[3];
         }
 
         int sugars = Integer.parseInt(sugarInput);
         BigDecimal money = BigDecimal.valueOf(Double.parseDouble(moneyInput));
 
-        return new Order(sugars, drink, money);
+        if(extraHotInput.equals("y")) {
+            extraHot = true;
+        }
+
+        return new Order(sugars, drink, money,extraHot);
     }
 }

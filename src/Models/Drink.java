@@ -1,12 +1,14 @@
+package Models;
+
 import java.math.BigDecimal;
 
 public class Drink {
-    BigDecimal price;
-    DrinkType drinktype;
+    public BigDecimal price;
+    public DrinkType drinktype;
 
     @Override
     public String toString() {
-        return "Drink{" +
+        return "Models.Drink{" +
                 "price=" + price +
                 ", drinktype=" + drinktype +
                 '}';

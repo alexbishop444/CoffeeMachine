@@ -1,3 +1,5 @@
+import Models.Drink;
+
 public interface DrinkListInterface {
-    Drink[] buildDrinksList();
+    Drink[] getDrinks();
 }
