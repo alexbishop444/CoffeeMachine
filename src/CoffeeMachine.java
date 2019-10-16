@@ -4,11 +4,13 @@ public class CoffeeMachine implements CoffeeMachineInterface{
     private DrinkMakerInterface drinkMaker;
     private OrderConverterInterface orderConverter;
     private OrderServiceInterface orderService;
+    private ReportInterface reportInterface;
 
-    public CoffeeMachine(DrinkMakerInterface drinkMaker, OrderConverterInterface orderConverter, OrderServiceInterface orderService) {
+    public CoffeeMachine(DrinkMakerInterface drinkMaker, OrderConverterInterface orderConverter, OrderServiceInterface orderService, ReportInterface reportInterface) {
         this.drinkMaker = drinkMaker;
         this.orderConverter = orderConverter;
         this.orderService = orderService;
+        this.reportInterface = reportInterface;
     }
 
     public Boolean processUserInput(String drinkInput, String sugarInput, String moneyInput, String extraHotInput) {
