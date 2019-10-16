@@ -3,7 +3,7 @@ import Models.Drink;
 import java.util.Scanner;
 
 public class CreateOrderWithUserInput {
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     public void runUserInput(CoffeeMachineInterface coffeeMachineInterface, DrinkListInterface drinkListInterface) {
         String extraHotInput = "n";
