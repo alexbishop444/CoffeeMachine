@@ -7,6 +7,6 @@ public class Main {
         OrderServiceInterface orderService = new OrderService(drinks);
         CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService);
         CreateOrderWithUserInput start = new CreateOrderWithUserInput();
-        start.runUserInput(coffeeMachine);
+        start.runUserInput(coffeeMachine,drinks);
     }
 }

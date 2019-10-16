@@ -1,22 +1,24 @@
+import Models.Drink;
+
 import java.util.Scanner;
 
 public class CreateOrderWithUserInput {
     Scanner scanner = new Scanner(System.in);
 
-    public void runUserInput(CoffeeMachineInterface coffeeMachineInterface) {
+    public void runUserInput(CoffeeMachineInterface coffeeMachineInterface, DrinkListInterface drinkListInterface) {
         String extraHotInput = "n";
-
         System.out.println("What drink do you want? 1 for Coffee, 2 for Tea, 3 for Chocolate or 4 for Orange juice");
         String drinkInput = scanner.nextLine();
         String sugarInput = "0";
-
-        if(drinkInput.equals("1") || drinkInput.equals("2") || drinkInput.equals("3")) {
-            System.out.println("Do you want it extra hot?");
+        Drink drink = drinkListInterface.getDrinks()[(Integer.parseInt(drinkInput) - 1)];
+        if(drink.drinkOptions.isExtraHot()) {
+            System.out.println("Extra hot? y or n?");
             extraHotInput = scanner.nextLine();
-            System.out.println("How many sugars?");
+        }
+        if(drink.drinkOptions.isSugars()) {
+            System.out.println("Enter sugars");
             sugarInput = scanner.nextLine();
         }
-
         System.out.println("Enter money");
         String moneyInput = scanner.nextLine();
 
