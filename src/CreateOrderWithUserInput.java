@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 public class CreateOrderWithUserInput {
     private Scanner scanner = new Scanner(System.in);
+    private ReportInterface reportInterface = new Report();
+    private Boolean machineRunning = true;
 
-    public void runUserInput(CoffeeMachineInterface coffeeMachineInterface, DrinkListInterface drinkListInterface) {
+    public Drink[] runUserInput(CoffeeMachineInterface coffeeMachineInterface, Drink[] drinks) {
         String extraHotInput = "n";
         System.out.println("What drink do you want? 1 for Coffee, 2 for Tea, 3 for Chocolate or 4 for Orange juice");
         String drinkInput = scanner.nextLine();
         String sugarInput = "0";
-        Drink drink = drinkListInterface.getDrinks()[(Integer.parseInt(drinkInput) - 1)];
+        Drink drink = coffeeMachineInterface.returnDrinks()[(Integer.parseInt(drinkInput) - 1)];
         if(drink.drinkOptions.isExtraHot()) {
             System.out.println("Extra hot? y or n?");
             extraHotInput = scanner.nextLine();
@@ -23,6 +25,19 @@ public class CreateOrderWithUserInput {
         String moneyInput = scanner.nextLine();
 
 
-        coffeeMachineInterface.processUserInput(drinkInput, sugarInput, moneyInput, extraHotInput);
+        return coffeeMachineInterface.processUserInput(drinkInput, sugarInput, moneyInput, extraHotInput, drinks);
+    }
+
+    public void runMachine(CoffeeMachineInterface coffeeMachineInterface) {
+        Drink[] drinks = coffeeMachineInterface.returnDrinks(); //Keeps going back to this
+        do {
+            drinks = runUserInput(coffeeMachineInterface, drinks);
+            System.out.println("Continue orders? y or n? n prints out report and exits.");
+            String userInput = scanner.nextLine();
+            if(userInput.equals("n")) {
+                machineRunning = false;
+            }
+        }while(machineRunning);
+        System.out.println(reportInterface.printReport(drinks));
     }
 }

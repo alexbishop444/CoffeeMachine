@@ -6,17 +6,19 @@ public class Drink {
     public BigDecimal price;
     public DrinkType drinktype;
     public DrinkOptions drinkOptions;
-    public int amountSold;
+    public BigDecimal amountSold;
 
-    public void setAmountSold(int amountSold) {
+    public void setAmountSold(BigDecimal amountSold) {
         this.amountSold = amountSold;
     }
 
     @Override
     public String toString() {
-        return "Models.Drink{" +
+        return "Drink{" +
                 "price=" + price +
                 ", drinktype=" + drinktype +
+                ", drinkOptions=" + drinkOptions +
+                ", amountSold=" + amountSold +
                 '}';
     }
 
@@ -24,7 +26,7 @@ public class Drink {
         this.price = price;
         this.drinktype = drinktype;
         this.drinkOptions = new DrinkOptions();
-        this.amountSold = 0;
+        this.amountSold = new BigDecimal("0");
     }
 
     public DrinkOptions getDrinkOptions() {

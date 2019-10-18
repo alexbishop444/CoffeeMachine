@@ -1,3 +1,7 @@
+import Models.Drink;
+
+
 public interface CoffeeMachineInterface {
-    Boolean processUserInput(String drinkInput, String sugarInput, String moneyInput, String extraHotInput);
+    Drink[] processUserInput(String drinkInput, String sugarInput, String moneyInput, String extraHotInput, Drink[] drinks);
+    Drink[] returnDrinks();
 }
