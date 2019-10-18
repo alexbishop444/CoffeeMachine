@@ -1,17 +1,15 @@
 import Models.Drink;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.stream.IntStream;
 
 public class Report implements ReportInterface {
-    public String printReport(ArrayList<Drink> soldDrinks) {
+    public String printReport(Drink[] drinks) {
         String result = "";
         BigDecimal total = new BigDecimal("0");
-        for (Drink drink:soldDrinks) {
-            total = total.add(drink.price);
+        for (Drink drink:drinks) {
+            total = total.add(drink.amountSold.multiply(drink.price));
         }
-        for (Drink drink:soldDrinks) {
+        for (Drink drink:drinks) {
             if (!result.contains(drink.drinktype.toString())) {
                 result += drink.drinktype + "'S Sold: " + drink.amountSold + " ";
             }

@@ -3,5 +3,5 @@ import Models.Drink;
 import java.util.ArrayList;
 
 public interface ReportInterface {
-    public String printReport(ArrayList<Drink> soldDrinks);
+    public String printReport(Drink[] drinks);
 }
