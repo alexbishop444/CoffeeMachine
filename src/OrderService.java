@@ -4,9 +4,7 @@ import Models.Order;
 import java.math.BigDecimal;
 
 public class OrderService implements OrderServiceInterface {
-    private DrinkListInterface drinkList;
-    public OrderService(DrinkListInterface drinkList) {
-        this.drinkList = drinkList;
+    public OrderService() {
     }
 
     public Order createOrder(String drinkInput, String sugarInput, String moneyInput, String extraHotInput, Drink[] drinks) {
