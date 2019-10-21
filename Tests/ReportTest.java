@@ -23,38 +23,4 @@ public class ReportTest {
         String expected = "COFFEE'S Sold: 5 TEA'S Sold: 3 Total profit for the day: $4.2";
         Assert.assertEquals(expected,actual);
     }
-//    @Test
-//    public void printReportForFiveDrinksSold() {
-//        soldDrinks.add(new Drink(DrinkType.COFFEE,new BigDecimal("0.6")));
-//        soldDrinks.add(new Drink(DrinkType.TEA,new BigDecimal("0.4")));
-//        soldDrinks.add(new Drink(DrinkType.CHOCOLATE,new BigDecimal("0.5")));
-//        soldDrinks.add(new Drink(DrinkType.ORANGE,new BigDecimal("0.6")));
-//        soldDrinks.add(new Drink(DrinkType.TEA,new BigDecimal("0.4")));
-//        soldDrinks.get(0).setAmountSold(1);
-//        soldDrinks.get(1).setAmountSold(2);
-//        soldDrinks.get(2).setAmountSold(1);
-//        soldDrinks.get(3).setAmountSold(1);
-//        soldDrinks.get(4).setAmountSold(2);
-//        Report report = new Report();
-//        String actual = report.printReport(soldDrinks);
-//        String expected = "COFFEE'S Sold: 1 TEA'S Sold: 2 CHOCOLATE'S Sold: 1 ORANGE'S Sold: 1 Total profit for the day: $2.5";
-//        Assert.assertEquals(expected,actual);
-//    }
-//    @Test
-//    public void printReportForFiveSameDrinksSold() {
-//        soldDrinks.add(new Drink(DrinkType.COFFEE,new BigDecimal("0.6")));
-//        soldDrinks.add(new Drink(DrinkType.COFFEE,new BigDecimal("0.6")));
-//        soldDrinks.add(new Drink(DrinkType.COFFEE,new BigDecimal("0.6")));
-//        soldDrinks.add(new Drink(DrinkType.COFFEE,new BigDecimal("0.6")));
-//        soldDrinks.add(new Drink(DrinkType.COFFEE,new BigDecimal("0.6")));
-//        soldDrinks.get(0).setAmountSold(5);
-//        soldDrinks.get(1).setAmountSold(5);
-//        soldDrinks.get(2).setAmountSold(5);
-//        soldDrinks.get(3).setAmountSold(5);
-//        soldDrinks.get(4).setAmountSold(5);
-//        Report report = new Report();
-//        String actual = report.printReport(soldDrinks);
-//        String expected = "COFFEE'S Sold: 5 Total profit for the day: $3.0";
-//        Assert.assertEquals(expected,actual);
-//    }
 }

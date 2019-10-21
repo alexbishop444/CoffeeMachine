@@ -9,8 +9,7 @@ public class OrderService implements OrderServiceInterface {
         this.drinkList = drinkList;
     }
 
-    public Order createOrder(String drinkInput, String sugarInput, String moneyInput, String extraHotInput) {
-        Drink[] drinks = drinkList.getDrinks();
+    public Order createOrder(String drinkInput, String sugarInput, String moneyInput, String extraHotInput, Drink[] drinks) {
 
         boolean extraHot = false;
         Drink drink = drinks[0];
