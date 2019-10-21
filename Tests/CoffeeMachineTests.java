@@ -1,8 +1,11 @@
 import Models.Drink;
+import Models.Order;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CoffeeMachineTests {
     DrinkMakerInterface drinkMaker = new DrinkMaker();
@@ -10,34 +13,32 @@ public class CoffeeMachineTests {
     DrinkListInterface drinkList = new DrinkList();
     OrderServiceInterface orderService = new OrderService(drinkList);
     ReportInterface report = new Report();
-    ArrayList<Drink> soldDrinks = new ArrayList<>();
+    Drink[] drinks = drinkList.getDrinks();
+
+    @Test
+    public void underPaidTest() {
+        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report,drinkList);
+        Drink[] input = coffeeMachine.processUserInput("1","2","0.1","n",drinks);
+        BigDecimal actual = input[0].amountSold;
+        BigDecimal expected = drinks[0].amountSold = new BigDecimal("0");
+        Assert.assertEquals(expected,actual);
+    }
+    @Test
+    public void exactPaidTest() {
+
+        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report,drinkList);
+        Drink[] input = coffeeMachine.processUserInput("1","2","0.6","n",drinks);
+        BigDecimal actual = input[0].amountSold;
+        BigDecimal expected = drinks[0].amountSold = new BigDecimal("1");
+        Assert.assertEquals(expected,actual);
+    }
+    @Test
+    public void OverPaidTest() {
+
+        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report,drinkList);
+        Drink[] input = coffeeMachine.processUserInput("1","2","33","n",drinks);
+        BigDecimal actual = input[0].amountSold;
+        BigDecimal expected = drinks[0].amountSold = new BigDecimal("1");
+        Assert.assertEquals(expected,actual);
+    }
 }
-//    @Test
-//    public void underPaidTest() {
-//
-//        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report);
-//        Boolean actual = coffeeMachine.processUserInput("1","2","0.2","n",soldDrinks);
-//        Assert.assertEquals(false,actual);
-//    }
-//    @Test
-//    public void exactPaidTest() {
-//
-//        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report);
-//        Boolean actual = coffeeMachine.processUserInput("1","2","0.6","n");
-//        Assert.assertEquals(true,actual);
-//    }
-//    @Test
-//    public void OverPaidTest() {
-//
-//        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report);
-//        Boolean actual = coffeeMachine.processUserInput("1","2","333","n");
-//        Assert.assertEquals(true,actual);
-//    }
-//    @Test
-//    public void CoffeeExtraHotTest() {
-//
-//        CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report);
-//        Boolean actual = coffeeMachine.processUserInput("1","2","0.6","y");
-//        Assert.assertEquals(true,actual);
-//    }
-//}

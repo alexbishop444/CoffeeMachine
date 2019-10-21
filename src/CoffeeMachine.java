@@ -3,6 +3,7 @@ import Models.Order;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CoffeeMachine implements CoffeeMachineInterface{
@@ -25,8 +26,7 @@ public class CoffeeMachine implements CoffeeMachineInterface{
     }
 
     public Drink[] processUserInput(String drinkInput, String sugarInput, String moneyInput, String extraHotInput, Drink[] drinks) {
-        Order order = orderService.createOrder(drinkInput,sugarInput,moneyInput, extraHotInput);
-
+        Order order = orderService.createOrder(drinkInput,sugarInput,moneyInput, extraHotInput, drinks);
 
         if(order.drink.price.compareTo(order.money) == 1) {
             System.out.println("You dont have enough money. You are $" + order.drink.price.subtract(order.money) + " short.");
