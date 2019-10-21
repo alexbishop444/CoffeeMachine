@@ -31,6 +31,8 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         if(order.drink.price.compareTo(order.money) == 1) {
             System.out.println("You dont have enough money. You are $" + order.drink.price.subtract(order.money) + " short.");
             return drinks;
+
+            //if statement here to check if drink can be made
         }
         for (Drink drink:drinks) {
             if(order.drink.drinktype == drink.drinktype) {
