@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Drink {
     public BigDecimal price;
     public DrinkType drinktype;
-    public DrinkOptions drinkOptions;
+    public DrinkOption[] drinkOptions;
     public BigDecimal amountSold;
 
     public void setAmountSold(BigDecimal amountSold) {
@@ -22,14 +22,10 @@ public class Drink {
                 '}';
     }
 
-    public Drink(DrinkType drinktype, BigDecimal price) {
+    public Drink(DrinkType drinktype, BigDecimal price, DrinkOption[] drinkOptions) {
         this.price = price;
         this.drinktype = drinktype;
-        this.drinkOptions = new DrinkOptions();
+        this.drinkOptions = drinkOptions;
         this.amountSold = new BigDecimal("0");
-    }
-
-    public DrinkOptions getDrinkOptions() {
-        return drinkOptions;
     }
 }
