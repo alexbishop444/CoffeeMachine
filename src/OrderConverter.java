@@ -1,3 +1,5 @@
+import Models.DrinkOption;
+import Models.DrinkOptionType;
 import Models.Order;
 
 public class OrderConverter implements OrderConverterInterface {
@@ -21,15 +23,32 @@ public class OrderConverter implements OrderConverterInterface {
 
         String stick = "";
         String sugars = "";
-        if (order.sugars > 0) {
-            stick = "0";
-            sugars = String.valueOf(order.sugars);
+
+        if(order.userSelection.containsKey(DrinkOptionType.EXTRAHOT)) {
+            String userInputForExtraHot = order.userSelection.get(DrinkOptionType.EXTRAHOT);
+            if(userInputForExtraHot.equals("y")) {
+                extraHotValue = "h";
+            }
         }
 
-        if(order.extraHot) {
-            extraHotValue = "h";
+        if(order.userSelection.containsKey(DrinkOptionType.NUMBEROFSUGARS)) {
+            String sugarString = order.userSelection.get(DrinkOptionType.NUMBEROFSUGARS);
+            int sugarsConverted = Integer.parseInt(sugarString);
+            if (sugarsConverted > 0) {
+                stick = "0";
+                sugars = sugarString;
+            }
+
         }
 
         return String.format("%c%s:%s:%s", drinkTypeValue, extraHotValue, sugars, stick);
     }
 }
+
+
+
+//        if(extraHotInput.equals("y")) {
+//            extraHot = true;
+//        }
+
+//    int sugarsConverted = Integer.parseInt(DrinkOptionType.NUMBEROFSUGARS);

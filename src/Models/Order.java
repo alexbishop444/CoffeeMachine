@@ -3,29 +3,16 @@ package Models;
 import Models.Drink;
 
 import java.math.BigDecimal;
+import java.util.HashMap;
 
 public class Order {
-    public int sugars;
     public Drink drink;
     public BigDecimal money;
-    public Boolean extraHot;
+    public HashMap<DrinkOptionType, String> userSelection;
 
-    @Override
-    public String toString() {
-        return "Models.Order{" +
-                "sugars=" + sugars +
-                ", drink=" + drink +
-                ", money=" + money +
-                ", extraHot=" + extraHot +
-                '}';
-    }
-
-
-
-    public Order(int sugars, Drink drink, BigDecimal money, Boolean extraHot) {
-        this.sugars = sugars;
+    public Order(HashMap<DrinkOptionType, String> userSelection , Drink drink, BigDecimal money) {
         this.drink = drink;
         this.money = money;
-        this.extraHot = extraHot;
+        this.userSelection = userSelection;
     }
 }

@@ -1,15 +1,16 @@
 import Models.Drink;
+import Models.DrinkOptionType;
 import Models.Order;
 
 import java.math.BigDecimal;
+import java.util.HashMap;
 
 public class OrderService implements OrderServiceInterface {
     public OrderService() {
     }
 
-    public Order createOrder(String drinkInput, String sugarInput, String moneyInput, String extraHotInput, Drink[] drinks) {
+    public Order createOrder(String drinkInput, String moneyInput, HashMap<DrinkOptionType, String> userSelection, Drink[] drinks) {
 
-        boolean extraHot = false;
         Drink drink = drinks[0];
 
         for (int i = 0; i < drinks.length + 1; i++) {
@@ -18,13 +19,8 @@ public class OrderService implements OrderServiceInterface {
             }
         }
 
-        int sugars = Integer.parseInt(sugarInput);
         BigDecimal money = BigDecimal.valueOf(Double.parseDouble(moneyInput));
 
-        if(extraHotInput.equals("y")) {
-            extraHot = true;
-        }
-
-        return new Order(sugars, drink, money,extraHot);
+        return new Order(userSelection,drink, money);
     }
 }
