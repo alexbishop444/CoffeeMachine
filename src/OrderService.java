@@ -13,18 +13,11 @@ public class OrderService implements OrderServiceInterface {
 
         boolean extraHot = false;
         Drink drink = drinks[0];
-        switch (drinkInput) {
-            case "1":
-                drink = drinks[0];
-                break;
-            case "2":
-                drink = drinks[1];
-                break;
-            case "3":
-                drink = drinks[2];
-                break;
-            case "4":
-                drink = drinks[3];
+
+        for (int i = 0; i < drinks.length + 1; i++) {
+            if(drinkInput.equals(Integer.toString(i))) {
+                drink = drinks[i - 1];
+            }
         }
 
         int sugars = Integer.parseInt(sugarInput);
