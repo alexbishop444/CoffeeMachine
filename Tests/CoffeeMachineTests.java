@@ -1,12 +1,9 @@
 import Models.Drink;
 import Models.DrinkOptionType;
-import Models.Order;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class CoffeeMachineTests {
@@ -21,7 +18,7 @@ public class CoffeeMachineTests {
     @Test
     public void underPaidTest() {
         CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report,drinkList);
-        Drink[] input = coffeeMachine.processUserInput("1","2",drinks,userSelection);
+        Drink[] input = coffeeMachine.processUserInput("1","0.1",drinks,userSelection);
         BigDecimal actual = input[0].amountSold;
         BigDecimal expected = drinks[0].amountSold = new BigDecimal("0");
         Assert.assertEquals(expected,actual);
@@ -30,7 +27,7 @@ public class CoffeeMachineTests {
     public void exactPaidTest() {
 
         CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report,drinkList);
-        Drink[] input = coffeeMachine.processUserInput("1","2",drinks,userSelection);
+        Drink[] input = coffeeMachine.processUserInput("1","0.6",drinks,userSelection);
         BigDecimal actual = input[0].amountSold;
         BigDecimal expected = drinks[0].amountSold = new BigDecimal("1");
         Assert.assertEquals(expected,actual);
