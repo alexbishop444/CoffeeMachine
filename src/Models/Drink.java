@@ -6,9 +6,9 @@ public class Drink {
     public BigDecimal price;
     public DrinkType drinktype;
     public DrinkOption[] drinkOptions;
-    public BigDecimal amountSold;
+    public int amountSold;
 
-    public void setAmountSold(BigDecimal amountSold) {
+    public void setAmountSold(int amountSold) {
         this.amountSold = amountSold;
     }
 
@@ -26,6 +26,6 @@ public class Drink {
         this.price = price;
         this.drinktype = drinktype;
         this.drinkOptions = drinkOptions;
-        this.amountSold = new BigDecimal("0");
+        this.amountSold = 0;
     }
 }

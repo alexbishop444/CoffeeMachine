@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="230f529e-7086-4da6-b9bf-9dcd36cefed9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_all_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/mockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeMachine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/CoffeeMachineTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/CoffeeMachineTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/DrinkMakerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/DrinkMakerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/OrderConverterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/OrderConverterTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/ReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ReportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateOrderWithUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateOrderWithUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Report.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CreateOrderWithUserInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
+            <state relative-caret-position="390">
+              <caret line="26" column="102" lean-forward="true" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#732#757#0" expanded="true" />
@@ -32,11 +38,35 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/CoffeeMachineTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/ReportTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CoffeeMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="270">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#988#989#0" expanded="true" />
@@ -46,41 +76,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/CoffeeMachineTests.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Report.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+            <state relative-caret-position="135">
+              <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#651#676#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/DrinkMakerTests.java">
+        <entry file="file://$PROJECT_DIR$/src/ReportInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="117" selection-start-line="53" selection-start-column="117" selection-end-line="53" selection-end-column="117" />
+            <state relative-caret-position="75">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#298#323#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/OrderConverterTests.java">
+        <entry file="file://$PROJECT_DIR$/src/Models/Drink.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#221#246#0" expanded="true" />
-              </folding>
+              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -91,8 +115,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,26 +143,27 @@
         <option value="$PROJECT_DIR$/src/DrinkMaker.java" />
         <option value="$PROJECT_DIR$/Tests/ReporterTest.java" />
         <option value="$PROJECT_DIR$/src/ReportInterface.java" />
-        <option value="$PROJECT_DIR$/src/Report.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Models/DrinkOptionType.java" />
         <option value="$PROJECT_DIR$/src/Models/DrinkOptions.java" />
-        <option value="$PROJECT_DIR$/src/Models/Drink.java" />
         <option value="$PROJECT_DIR$/src/DrinkList.java" />
         <option value="$PROJECT_DIR$/src/DrinkListInterface.java" />
         <option value="$PROJECT_DIR$/src/Models/Order.java" />
         <option value="$PROJECT_DIR$/src/OrderService.java" />
         <option value="$PROJECT_DIR$/src/OrderServiceInterface.java" />
         <option value="$PROJECT_DIR$/src/Models/DrinkOption.java" />
-        <option value="$PROJECT_DIR$/src/CoffeeMachine.java" />
         <option value="$PROJECT_DIR$/src/CoffeeMachineInterface.java" />
-        <option value="$PROJECT_DIR$/src/CreateOrderWithUserInput.java" />
         <option value="$PROJECT_DIR$/src/OrderConverter.java" />
         <option value="$PROJECT_DIR$/Tests/OrderServiceTests.java" />
-        <option value="$PROJECT_DIR$/Tests/ReportTest.java" />
         <option value="$PROJECT_DIR$/Tests/OrderConverterTests.java" />
         <option value="$PROJECT_DIR$/Tests/DrinkMakerTests.java" />
+        <option value="$PROJECT_DIR$/Tests/mockTest.java" />
+        <option value="$PROJECT_DIR$/src/CreateOrderWithUserInput.java" />
+        <option value="$PROJECT_DIR$/src/Models/Drink.java" />
+        <option value="$PROJECT_DIR$/src/Report.java" />
+        <option value="$PROJECT_DIR$/src/CoffeeMachine.java" />
         <option value="$PROJECT_DIR$/Tests/CoffeeMachineTests.java" />
+        <option value="$PROJECT_DIR$/Tests/ReportTest.java" />
       </list>
     </option>
   </component>
@@ -169,12 +194,6 @@
             <path>
               <item name="CoffeeMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="CoffeeMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CoffeeMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CoffeeMachine" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -192,7 +211,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -208,12 +227,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CoffeeMachineTests.underPaidTest">
-    <configuration name="CoffeeMachineTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ReportTest.printReportForTwoDrinksSold">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CoffeeMachine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in CoffeeMachine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeMachine" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CoffeeMachineTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,49 +253,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoffeeMachineTests.underPaidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportTest.printReportForTwoDrinksSold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeMachine" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CoffeeMachineTests" />
-      <option name="METHOD_NAME" value="underPaidTest" />
+      <option name="MAIN_CLASS_NAME" value="ReportTest" />
+      <option name="METHOD_NAME" value="printReportForTwoDrinksSold" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DrinkMakerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="mockTest.mocktest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeMachine" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DrinkMakerTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DrinkMakerTests.makeHotChocolateWith55Sugars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoffeeMachine" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DrinkMakerTests" />
-      <option name="METHOD_NAME" value="makeHotChocolateWith55Sugars" />
+      <option name="MAIN_CLASS_NAME" value="mockTest" />
+      <option name="METHOD_NAME" value="mocktest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DrinkMakerTests.makeHotChocolateWith55Sugars" />
-      <item itemvalue="JUnit.DrinkMakerTests" />
-      <item itemvalue="JUnit.CoffeeMachineTests.underPaidTest" />
-      <item itemvalue="JUnit.CoffeeMachineTests" />
       <item itemvalue="JUnit.CoffeeMachineTests.exactPaidTest" />
+      <item itemvalue="JUnit.All in CoffeeMachine" />
+      <item itemvalue="JUnit.mockTest.mocktest" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.ReportTest.printReportForTwoDrinksSold" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CoffeeMachineTests.underPaidTest" />
+        <item itemvalue="JUnit.ReportTest.printReportForTwoDrinksSold" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in CoffeeMachine" />
+        <item itemvalue="JUnit.mockTest.mocktest" />
         <item itemvalue="JUnit.CoffeeMachineTests.exactPaidTest" />
-        <item itemvalue="JUnit.CoffeeMachineTests" />
-        <item itemvalue="JUnit.DrinkMakerTests" />
-        <item itemvalue="JUnit.DrinkMakerTests.makeHotChocolateWith55Sugars" />
       </list>
     </recent_temporary>
   </component>
@@ -285,44 +301,44 @@
       <option name="presentableId" value="Default" />
       <updated>1570664015165</updated>
       <workItem from="1570664037916" duration="42446000" />
-      <workItem from="1571185551129" duration="38380000" />
+      <workItem from="1571185551129" duration="42904000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_CoffeeMachine - 2019.10.22 at 11h 17m 14s.xml">
-      <configuration name="All in CoffeeMachine" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DrinkMakerTests_makeTeaWithOneSugar - 2019.10.22 at 11h 19m 32s.xml">
-      <configuration name="DrinkMakerTests.makeTeaWithOneSugar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DrinkMakerTests_makeTeaWithOneSugar - 2019.10.22 at 11h 20m 00s.xml">
-      <configuration name="DrinkMakerTests.makeTeaWithOneSugar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DrinkMakerTests_makeOrange - 2019.10.22 at 11h 20m 44s.xml">
-      <configuration name="DrinkMakerTests.makeOrange" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DrinkMakerTests_makeCoffeeExtraHot - 2019.10.22 at 11h 21m 03s.xml">
-      <configuration name="DrinkMakerTests.makeCoffeeExtraHot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DrinkMakerTests_makeHotChocolateWith55Sugars - 2019.10.22 at 11h 21m 17s.xml">
-      <configuration name="DrinkMakerTests.makeHotChocolateWith55Sugars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DrinkMakerTests - 2019.10.22 at 11h 21m 23s.xml">
-      <configuration name="DrinkMakerTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoffeeMachineTests_underPaidTest - 2019.10.22 at 11h 21m 39s.xml">
-      <configuration name="CoffeeMachineTests.underPaidTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CoffeeMachineTests - 2019.10.22 at 11h 21m 47s.xml">
       <configuration name="CoffeeMachineTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CoffeeMachineTests - 2019.10.22 at 11h 22m 49s.xml">
       <configuration name="CoffeeMachineTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CoffeeMachineTests_exactPaidTest - 2019.10.22 at 11h 23m 09s.xml">
+      <configuration name="CoffeeMachineTests.exactPaidTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoffeeMachineTests_underPaidTest - 2019.10.22 at 11h 23m 16s.xml">
+      <configuration name="CoffeeMachineTests.underPaidTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoffeeMachineTests_exactPaidTest - 2019.10.22 at 13h 09m 14s.xml">
+      <configuration name="CoffeeMachineTests.exactPaidTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CoffeeMachine - 2019.10.22 at 13h 09m 26s.xml">
+      <configuration name="All in CoffeeMachine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mockTest_mocktest - 2019.10.22 at 14h 10m 30s.xml">
+      <configuration name="mockTest.mocktest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mockTest_mocktest - 2019.10.22 at 14h 10m 46s.xml">
+      <configuration name="mockTest.mocktest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mockTest_mocktest - 2019.10.22 at 14h 11m 14s.xml">
+      <configuration name="mockTest.mocktest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CoffeeMachine - 2019.10.22 at 14h 49m 27s.xml">
+      <configuration name="All in CoffeeMachine" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80826000" />
+    <option name="totallyTimeSpent" value="85350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="966" extended-state="6" />
@@ -427,16 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReportInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -451,16 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/DrinkType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -468,30 +464,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoffeeMachineInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/OrderServiceInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="122" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrinkListInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -508,20 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Drink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/OrderServiceTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -533,30 +495,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/ReportTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CreateOrderWithUserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#732#757#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,25 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoffeeMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrinkList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -612,8 +537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/OrderConverterTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="68" />
+        <state relative-caret-position="134">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#221#246#0" expanded="true" />
@@ -632,13 +557,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/CoffeeMachineTests.java">
+    <entry file="file://$PROJECT_DIR$/Tests/mockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#651#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeMachineInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrinkListInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReportInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CreateOrderWithUserInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="102" lean-forward="true" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#732#757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Drink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/ReportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/CoffeeMachineTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -706,7 +734,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>junit:junit:4.12</last-edited>
+          <last-edited>org.mockito:mockito-all:1.10.19</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
