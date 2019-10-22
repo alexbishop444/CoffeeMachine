@@ -3,10 +3,7 @@ import Models.DrinkOptionType;
 import Models.Order;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class CoffeeMachine implements CoffeeMachineInterface{
     private DrinkMakerInterface drinkMaker;
@@ -39,7 +36,8 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         }
         for (Drink drink:drinks) {
             if(order.drink.drinktype == drink.drinktype) {
-                order.drink.setAmountSold(order.drink.amountSold.add(new BigDecimal("1")));
+                order.drink.setAmountSold(+1);
+//                order.drink.setAmountSold(order.drink.amountSold.add(new BigDecimal("1")));
             }
         }
         System.out.println(order.drink.amountSold);

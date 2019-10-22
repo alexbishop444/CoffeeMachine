@@ -1,7 +1,6 @@
 import Models.Drink;
 import Models.DrinkOptionType;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -11,10 +10,8 @@ public class CreateOrderWithUserInput {
     private Boolean machineRunning = true;
 
     public Drink[] runUserInput(CoffeeMachineInterface coffeeMachineInterface, Drink[] drinks) {
-        String extraHotInput = "n";
         System.out.println("What drink do you want? 1 for Coffee, 2 for Tea, 3 for Chocolate or 4 for Orange juice");
         String drinkInput = scanner.nextLine();
-        String sugarInput = "0";
         HashMap<DrinkOptionType, String> userSelection = new HashMap<DrinkOptionType, String>();
         Drink drink = drinks[(Integer.parseInt(drinkInput) - 1)];
         for (int i = 0; i < drink.drinkOptions.length; i++) {
@@ -31,7 +28,7 @@ public class CreateOrderWithUserInput {
     }
 
     public void runMachine(CoffeeMachineInterface coffeeMachineInterface) {
-        Drink[] drinks = coffeeMachineInterface.returnDrinks(); //Keeps going back to this
+        Drink[] drinks = coffeeMachineInterface.returnDrinks();
 
         do {
             drinks = runUserInput(coffeeMachineInterface, drinks);
