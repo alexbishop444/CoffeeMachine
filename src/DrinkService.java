@@ -4,9 +4,8 @@ import Models.DrinkOptionType;
 import Models.DrinkType;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
-public class DrinkList implements DrinkListInterface {
+public class DrinkService implements DrinkServiceInterface {
     private Drink[] drinks;
 
     public Drink[] getDrinks() {
@@ -20,6 +19,11 @@ public class DrinkList implements DrinkListInterface {
             drinks[3] = new Drink(DrinkType.ORANGE, new BigDecimal("0.6"), new DrinkOption[]{});
         }
         return drinks;
+    }
+
+    public DrinkOption[] getDrinkOptions(DrinkType drinkType)
+    {
+        // find drink from drinks[] of drinkType, report its options
     }
 
 }

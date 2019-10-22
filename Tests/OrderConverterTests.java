@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class OrderConverterTests {
     HashMap<DrinkOptionType, String> userSelection = new HashMap<DrinkOptionType, String>();
-    Drink[] drinks = new DrinkList().getDrinks();
+    Drink[] drinks = new DrinkService().getDrinks();
     @Test
     public void makeTeaWithOneSugar() {
         Order order = new Order(userSelection,drinks[1],new BigDecimal("0.5"));

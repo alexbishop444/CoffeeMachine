@@ -2,6 +2,6 @@ import Models.Drink;
 
 import java.util.ArrayList;
 
-public interface DrinkListInterface {
+public interface DrinkServiceInterface {
     Drink[] getDrinks();
 }

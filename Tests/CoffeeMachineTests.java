@@ -3,13 +3,12 @@ import Models.DrinkOptionType;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.math.BigDecimal;
 import java.util.HashMap;
 
 public class CoffeeMachineTests {
     DrinkMakerInterface drinkMaker = new DrinkMaker();
     OrderConverterInterface orderConverter = new OrderConverter();
-    DrinkListInterface drinkList = new DrinkList();
+    DrinkServiceInterface drinkList = new DrinkService();
     OrderServiceInterface orderService = new OrderService();
     ReportInterface report = new Report();
     Drink[] drinks = drinkList.getDrinks();

@@ -1,7 +1,10 @@
-import Models.Drink;
+import Models.DrinkReportData;
+import Models.DrinkType;
+import Models.ReportData;
 
-import java.util.ArrayList;
+import java.math.BigDecimal;
 
 public interface ReportInterface {
-    public String printReport(Drink[] drinks);
+    String printReport(ReportData reportData);
+    void drinkSold(DrinkType drinkType, BigDecimal price);
 }
