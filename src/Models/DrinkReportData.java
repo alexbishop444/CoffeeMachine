@@ -12,4 +12,13 @@ public class DrinkReportData {
         this.numberOfDrinksSold = numberOfDrinksSold;
         this.drinkType = drinkType;
     }
+
+    @Override
+    public String toString() {
+        return "DrinkReportData{" +
+                "totalAmount=" + totalAmount +
+                ", numberOfDrinksSold=" + numberOfDrinksSold +
+                ", drinkType=" + drinkType +
+                '}';
+    }
 }

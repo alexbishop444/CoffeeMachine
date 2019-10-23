@@ -21,9 +21,15 @@ public class DrinkService implements DrinkServiceInterface {
         return drinks;
     }
 
-    public DrinkOption[] getDrinkOptions(DrinkType drinkType)
-    {
-        // find drink from drinks[] of drinkType, report its options
-    }
+//    public DrinkOption[] getDrinkOptions(DrinkType drinkType)
+//    {
+//        for (int i = 0; i < drinkOptions.length; i++) {
+//            System.out.println(drinkOptions[i].getQuestion());
+//            String userInput = scanner.nextLine();
+//            DrinkOptionType drinkOptionType = drinkOptions[i].getDrinkOptionType();
+//            userSelection.put(drinkOptionType,userInput);
+//        }
+//        // find drink from drinks[] of drinkType, report its options
+//    }
 
 }

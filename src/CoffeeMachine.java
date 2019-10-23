@@ -23,14 +23,15 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         milkAmount = 100;
     }
 
-    public DrinkOption[] GetDrinkOptions(DrinkType drinkType)
-    {
-        drinkServiceInterface.getDrinkOptions(drinkType);
-    }
+//    public DrinkOption[] GetDrinkOptions(DrinkType drinkType)
+//    {
+//        drinkServiceInterface.getDrinkOptions(drinkType);
+//    }
 
     public void printReport()
     {
-        reportInterface.printReport(report);
+        reportInterface.printReport();
+        System.out.println(reportInterface.printReport());
     }
 
     public boolean processUserInput(String drinkInput, String moneyInput, HashMap<DrinkOptionType,String> userSelection) {
