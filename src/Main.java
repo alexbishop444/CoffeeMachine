@@ -3,11 +3,11 @@ public class Main {
     public static void main(String[] args) {
         DrinkMakerInterface drinkMaker = new DrinkMaker();
         OrderConverterInterface orderConverter = new OrderConverter();
-        DrinkListInterface drinks = new DrinkList();
+        DrinkServiceInterface drinks = new DrinkService();
         OrderServiceInterface orderService = new OrderService();
         ReportInterface report = new Report();
         CoffeeMachineInterface coffeeMachine = new CoffeeMachine(drinkMaker,orderConverter,orderService,report, drinks);
-        CreateOrderWithUserInput start = new CreateOrderWithUserInput();
-        start.runMachine(coffeeMachine);
+        UserInterface start = new UserInterface(coffeeMachine, report);
+        start.runMachine();
     }
 }

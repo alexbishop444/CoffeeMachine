@@ -4,9 +4,8 @@ import Models.DrinkOptionType;
 import Models.DrinkType;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
-public class DrinkList implements DrinkListInterface {
+public class DrinkService implements DrinkServiceInterface {
     private Drink[] drinks;
 
     public Drink[] getDrinks() {
@@ -22,4 +21,14 @@ public class DrinkList implements DrinkListInterface {
         return drinks;
     }
 
+    public DrinkOption[] getDrinkOptions(DrinkType drinkType) {
+        drinks = getDrinks();
+        for (Drink drink:drinks) {
+            if(drink.drinktype == drinkType) {
+                return drink.drinkOptions;
+            }
+        }
+        // find drink from drinks[] of drinkType, report its options
+        return drinks[0].drinkOptions;
+    }
 }

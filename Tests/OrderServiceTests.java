@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class OrderServiceTests {
     private OrderService orderService = new OrderService();
     private HashMap<DrinkOptionType, String> userSelection = new HashMap<DrinkOptionType, String>();
-    private Drink[] drinks = new DrinkList().getDrinks();
+    private Drink[] drinks = new DrinkService().getDrinks();
 
     @Test
     public void makeTeaOrder() {
