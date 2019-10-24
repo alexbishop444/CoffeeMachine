@@ -7,6 +7,10 @@ public class DrinkReportData {
     public int numberOfDrinksSold;
     public DrinkType drinkType;
 
+    public void setTotalAmount(BigDecimal totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
     public DrinkReportData(BigDecimal totalAmount, int numberOfDrinksSold, DrinkType drinkType) {
         this.totalAmount = totalAmount;
         this.numberOfDrinksSold = numberOfDrinksSold;

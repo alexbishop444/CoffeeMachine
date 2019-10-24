@@ -28,7 +28,7 @@ public class Report implements ReportInterface {
             for (DrinkReportData item: drinkReportData){
                 if(item.drinkType == drinkType) {
                     item.numberOfDrinksSold += 1;
-                    item.totalAmount.add(price);
+                    item.setTotalAmount(price.plus());
                 }
         }
             // get drinkreportdata by drinkType, add price and increment count by 1
