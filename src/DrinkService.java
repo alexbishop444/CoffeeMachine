@@ -13,10 +13,10 @@ public class DrinkService implements DrinkServiceInterface {
             drinks = new Drink[DrinkType.values().length - 1];
             DrinkOption drinkOptionExtraHot = new DrinkOption(DrinkOptionType.EXTRAHOT, "Extra hot? y or n?");
             DrinkOption drinkOptionHasSugar = new DrinkOption(DrinkOptionType.NUMBEROFSUGARS, "How many sugars do you want?");
-            drinks[0] = new Drink(DrinkType.COFFEE, new BigDecimal("0.6"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar});
-            drinks[1] = new Drink(DrinkType.TEA, new BigDecimal("0.4"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar});
-            drinks[2] = new Drink(DrinkType.CHOCOLATE, new BigDecimal("0.5"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar});
-            drinks[3] = new Drink(DrinkType.ORANGE, new BigDecimal("0.6"), new DrinkOption[]{});
+            drinks[0] = new Drink(DrinkType.COFFEE, new BigDecimal("0.6"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar},20,20);
+            drinks[1] = new Drink(DrinkType.TEA, new BigDecimal("0.4"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar},420,30);
+            drinks[2] = new Drink(DrinkType.CHOCOLATE, new BigDecimal("0.5"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar},30,20);
+            drinks[3] = new Drink(DrinkType.ORANGE, new BigDecimal("0.6"), new DrinkOption[]{},0,0);
         }
         return drinks;
     }
@@ -30,5 +30,16 @@ public class DrinkService implements DrinkServiceInterface {
         }
         // find drink from drinks[] of drinkType, report its options
         return drinks[0].drinkOptions;
+    }
+
+    public Drink getDrink(DrinkType drinkType) {
+        drinks = getDrinks();
+        for (Drink drink:drinks) {
+            if(drink.drinktype == drinkType) {
+                return drink;
+            }
+        }
+        // find drink from drinks[] of drinkType, report its options
+        return drinks[0];
     }
 }

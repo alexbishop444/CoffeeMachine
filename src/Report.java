@@ -1,7 +1,6 @@
 import Models.*;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
 
 public class Report implements ReportInterface {
 
@@ -21,8 +20,6 @@ public class Report implements ReportInterface {
 
         }
         String end = result + "Total profit for the day: $" + total;
-        for (DrinkReportData test:drinkReportData) {
-        }
         return end;
     }
 
@@ -33,6 +30,5 @@ public class Report implements ReportInterface {
                     item.setTotalAmount(price.plus());
                 }
         }
-            // get drinkreportdata by drinkType, add price and increment count by 1
     }
 }
