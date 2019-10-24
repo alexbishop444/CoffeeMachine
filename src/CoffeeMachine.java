@@ -41,10 +41,12 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         return false;
     }
 
-    public void notifyMissingDrink() {
+    public void notifyMissingDrink(DrinkType drinkType) {
+        Drink drink = drinkServiceInterface.getDrink(drinkType);
         System.out.println("You are lacking Milk and/or water");
-        System.out.println("Milk = " + milkAmount);
-        System.out.println("Water = " + waterAmount);
+        System.out.println("Milk amount = " + milkAmount);
+        System.out.println("Water amount = " + waterAmount);
+        System.out.println(drink.drinktype.toString() + " requires " + drink.waterRequirement + " water and " + drink.milkRequirement + " milk");
     }
 
     public boolean processUserInput(String drinkInput, String moneyInput, HashMap<DrinkOptionType,String> userSelection) {
@@ -57,7 +59,7 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         }
 
          if (isEmpty(order.drink.drinktype)) {
-             notifyMissingDrink();
+             notifyMissingDrink(order.drink.drinktype);
              return false;
         }
         waterAmount = waterAmount - order.drink.waterRequirement;
