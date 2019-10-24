@@ -1,4 +1,3 @@
-import Models.Drink;
 import Models.DrinkType;
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,9 +5,6 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 public class ReportTest {
-
-    Drink[] drinks = new DrinkService().getDrinks();
-
     @Test
     public void printReportForTwoDrinksSold() {
         Report report = new Report();
