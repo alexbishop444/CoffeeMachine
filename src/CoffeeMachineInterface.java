@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public interface CoffeeMachineInterface {
     boolean processUserInput(String drinkInput, String moneyInput, HashMap<DrinkOptionType,String> userSelection);
-    void notifyMissingDrink();
+    void notifyMissingDrink(DrinkType drinkType);
     boolean isEmpty(DrinkType drinkType);
     void printReport();
     DrinkOption[] GetDrinkOptions(DrinkType drinkType);
