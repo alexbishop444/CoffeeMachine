@@ -23,14 +23,13 @@ public class UserInterface {
         HashMap<DrinkOptionType, String> userSelection = new HashMap<DrinkOptionType, String>();
 
         DrinkType selectedDrinkType = DrinkType.valueOf(Integer.parseInt(drinkInput) - 1);
-//        DrinkOption[] drinkOptions = coffeeMachineInterface.GetDrinkOptions(selectedDrinkType);
-//
-//        for (int i = 0; i < drinkOptions.length; i++) {
-//            System.out.println(drinkOptions[i].getQuestion());
-//            String userInput = scanner.nextLine();
-//            DrinkOptionType drinkOptionType = drinkOptions[i].getDrinkOptionType();
-//            userSelection.put(drinkOptionType,userInput);
-//        }
+        DrinkOption[] drinkOptions = coffeeMachineInterface.GetDrinkOptions(selectedDrinkType);
+        for (int i = 0; i < drinkOptions.length; i++) {
+            System.out.println(drinkOptions[i].getQuestion());
+            String userInput = scanner.nextLine();
+            DrinkOptionType drinkOptionType = drinkOptions[i].getDrinkOptionType();
+            userSelection.put(drinkOptionType,userInput);
+        }
 
         System.out.println("Enter money");
         String moneyInput = scanner.nextLine();

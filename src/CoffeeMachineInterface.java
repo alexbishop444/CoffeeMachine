@@ -11,5 +11,5 @@ public interface CoffeeMachineInterface {
 //    void notifyMissingDrink();
 //    boolean isEmpty(DrinkType drinkType);
     void printReport();
-//    DrinkOption[] GetDrinkOptions(DrinkType drinkType);
+    DrinkOption[] GetDrinkOptions(DrinkType drinkType);
 }

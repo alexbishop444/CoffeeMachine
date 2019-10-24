@@ -23,10 +23,10 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         milkAmount = 100;
     }
 
-//    public DrinkOption[] GetDrinkOptions(DrinkType drinkType)
-//    {
-//        drinkServiceInterface.getDrinkOptions(drinkType);
-//    }
+    public DrinkOption[] GetDrinkOptions(DrinkType drinkType)
+    {
+        return drinkServiceInterface.getDrinkOptions(drinkType);
+    }
 
     public void printReport()
     {
