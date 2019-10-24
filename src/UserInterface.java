@@ -22,7 +22,7 @@ public class UserInterface {
         String drinkInput = scanner.nextLine();
         HashMap<DrinkOptionType, String> userSelection = new HashMap<DrinkOptionType, String>();
 
-        DrinkType selectedDrinkType = DrinkType.valueOf(Integer.parseInt(drinkInput) - 1);
+        DrinkType selectedDrinkType = DrinkType.valueOf(Integer.parseInt(drinkInput));
         DrinkOption[] drinkOptions = coffeeMachineInterface.GetDrinkOptions(selectedDrinkType);
         for (int i = 0; i < drinkOptions.length; i++) {
             System.out.println(drinkOptions[i].getQuestion());

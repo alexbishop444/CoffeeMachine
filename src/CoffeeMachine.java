@@ -18,7 +18,6 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         this.orderService = orderService;
         this.reportInterface = reportInterface;
         this.drinkServiceInterface = drinkServiceInterface;
-
         waterAmount = 100;
         milkAmount = 100;
     }
