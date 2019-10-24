@@ -15,7 +15,9 @@ public class Report implements ReportInterface {
             total += drink.numberOfDrinksSold * drink.totalAmount.doubleValue();
         }
         for (DrinkReportData drink:drinkReportData) {
-                result += drink.drinkType + "'S Sold: " + drink.numberOfDrinksSold + " ";
+                if (drink.drinkType != DrinkType.NONE) {
+                    result += drink.drinkType + "'S Sold: " + drink.numberOfDrinksSold + " ";
+                }
 
         }
         String end = result + "Total profit for the day: $" + total;

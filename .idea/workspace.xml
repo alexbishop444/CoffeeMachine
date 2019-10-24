@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="230f529e-7086-4da6-b9bf-9dcd36cefed9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Models/DrinkReportData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/DrinkReportData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Report.java" afterDir="false" />
-    </list>
+    <list default="true" id="230f529e-7086-4da6-b9bf-9dcd36cefed9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,29 +72,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DrinkService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/ReportTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="150">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Models/DrinkOption.java">
+        <entry file="file://$PROJECT_DIR$/src/DrinkService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-              <folding>
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -111,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Report.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="480">
+              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -265,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ReportTest.printReportForTwoDrinksSold">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="CoffeeMachine" />
@@ -320,8 +311,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ReportTest.printReportForTwoDrinksSold" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in CoffeeMachine" />
         <item itemvalue="JUnit.mockTest.mocktest" />
         <item itemvalue="JUnit.CoffeeMachineTests.exactPaidTest" />
@@ -340,7 +331,7 @@
       <updated>1570664015165</updated>
       <workItem from="1570664037916" duration="42446000" />
       <workItem from="1571185551129" duration="52121000" />
-      <workItem from="1571873609499" duration="2355000" />
+      <workItem from="1571873609499" duration="2531000" />
     </task>
     <servers />
   </component>
@@ -377,7 +368,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96922000" />
+    <option name="totallyTimeSpent" value="97098000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -624,16 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/ReportTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReportInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -734,8 +715,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Report.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="480">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/ReportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
