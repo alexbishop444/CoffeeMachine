@@ -18,9 +18,11 @@ public class Drink {
                 '}';
     }
 
-    public Drink(DrinkType drinktype, BigDecimal price, DrinkOption[] drinkOptions) {
+    public Drink(DrinkType drinktype, BigDecimal price, DrinkOption[] drinkOptions,int waterRequirement, int milkRequirement) {
         this.price = price;
         this.drinktype = drinktype;
         this.drinkOptions = drinkOptions;
+        this.waterRequirement = waterRequirement;
+        this.milkRequirement = milkRequirement;
     }
 }

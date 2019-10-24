@@ -33,6 +33,20 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         System.out.println(reportInterface.printReport());
     }
 
+    public boolean isEmpty(DrinkType drinkType) {
+        Drink drink = drinkServiceInterface.getDrink(drinkType);
+        if(drink.milkRequirement > milkAmount || drink.waterRequirement > waterAmount) {
+            return true;
+        }
+        return false;
+    }
+
+    public void notifyMissingDrink() {
+        System.out.println("You are lacking Milk and/or water");
+        System.out.println("Milk = " + milkAmount);
+        System.out.println("Water = " + waterAmount);
+    }
+
     public boolean processUserInput(String drinkInput, String moneyInput, HashMap<DrinkOptionType,String> userSelection) {
         Drink[] drinks = drinkServiceInterface.getDrinks();
         Order order = orderService.createOrder(drinkInput, moneyInput,userSelection, drinks);
@@ -42,12 +56,15 @@ public class CoffeeMachine implements CoffeeMachineInterface{
             return false;
         }
 
-        // if (!isEmpty(drinkType));
-        //      email thingy, return false
-
+         if (isEmpty(order.drink.drinktype)) {
+             notifyMissingDrink();
+             return false;
+        }
+        waterAmount = waterAmount - order.drink.waterRequirement;
+        milkAmount = milkAmount - order.drink.milkRequirement;
         String drinkMakerProtocolMessage = orderConverter.convertOrder(order);
         System.out.println(drinkMakerProtocolMessage);
-
+        System.out.println("Machine has water  " + waterAmount + " and milk " + milkAmount);
         String output = drinkMaker.makeDrink(drinkMakerProtocolMessage);
         System.out.println(output);
 

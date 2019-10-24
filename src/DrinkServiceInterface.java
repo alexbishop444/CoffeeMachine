@@ -7,4 +7,5 @@ import java.util.ArrayList;
 public interface DrinkServiceInterface {
     Drink[] getDrinks();
     DrinkOption[] getDrinkOptions(DrinkType drinkType);
+    Drink getDrink(DrinkType drinkType);
 }
