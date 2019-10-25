@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class UserInterface {
     private CoffeeMachineInterface coffeeMachineInterface;
 
-    public UserInterface(CoffeeMachineInterface coffeeMachineInterface, ReportInterface reportInterface) {
+    public UserInterface(CoffeeMachineInterface coffeeMachineInterface) {
         this.coffeeMachineInterface = coffeeMachineInterface;
     }
 
