@@ -1,4 +1,6 @@
 import Models.*;
+import Service.DrinkServiceInterface;
+import Service.OrderServiceInterface;
 
 import java.util.HashMap;
 
@@ -9,8 +11,8 @@ public class CoffeeMachine implements CoffeeMachineInterface{
     private ReportInterface reportInterface;
     private DrinkServiceInterface drinkServiceInterface;
 
-    private int waterAmount;
-    private int milkAmount;
+    private int currentWaterMl;
+    private int currentMilkMl;
 
     public CoffeeMachine(DrinkMakerInterface drinkMaker, OrderConverterInterface orderConverter, OrderServiceInterface orderService, ReportInterface reportInterface, DrinkServiceInterface drinkServiceInterface) {
         this.drinkMaker = drinkMaker;
@@ -18,8 +20,8 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         this.orderService = orderService;
         this.reportInterface = reportInterface;
         this.drinkServiceInterface = drinkServiceInterface;
-        waterAmount = 100;
-        milkAmount = 100;
+        currentWaterMl = 100;
+        currentMilkMl = 100;
     }
 
     public DrinkOption[] GetDrinkOptions(DrinkType drinkType)
@@ -35,7 +37,7 @@ public class CoffeeMachine implements CoffeeMachineInterface{
 
     public boolean isEmpty(DrinkType drinkType) {
         Drink drink = drinkServiceInterface.getDrink(drinkType);
-        if(drink.milkRequirement > milkAmount || drink.waterRequirement > waterAmount) {
+        if(drink.milkMlRequired > currentMilkMl || drink.waterMlRequired > currentWaterMl) {
             return true;
         }
         return false;
@@ -44,9 +46,9 @@ public class CoffeeMachine implements CoffeeMachineInterface{
     public void notifyMissingDrink(DrinkType drinkType) {
         Drink drink = drinkServiceInterface.getDrink(drinkType);
         System.out.println("You are lacking Milk and/or water");
-        System.out.println("Milk amount = " + milkAmount);
-        System.out.println("Water amount = " + waterAmount);
-        System.out.println(drink.drinktype.toString() + " requires " + drink.waterRequirement + " water and " + drink.milkRequirement + " milk");
+        System.out.println("Milk amount = " + currentMilkMl);
+        System.out.println("Water amount = " + currentWaterMl);
+        System.out.println(drink.drinktype.toString() + " requires " + drink.waterMlRequired + " water and " + drink.milkMlRequired + " milk");
     }
 
     public boolean processUserInput(String drinkInput, String moneyInput, HashMap<DrinkOptionType,String> userSelection) {
@@ -62,11 +64,11 @@ public class CoffeeMachine implements CoffeeMachineInterface{
              notifyMissingDrink(order.drink.drinktype);
              return false;
         }
-        waterAmount = waterAmount - order.drink.waterRequirement;
-        milkAmount = milkAmount - order.drink.milkRequirement;
+        currentWaterMl = currentWaterMl - order.drink.waterMlRequired;
+        currentMilkMl = currentMilkMl - order.drink.milkMlRequired;
         String drinkMakerProtocolMessage = orderConverter.convertOrder(order);
         System.out.println(drinkMakerProtocolMessage);
-        System.out.println("Machine has water  " + waterAmount + " and milk " + milkAmount);
+        System.out.println("Machine has water  " + currentWaterMl + " and milk " + currentMilkMl);
         String output = drinkMaker.makeDrink(drinkMakerProtocolMessage);
         System.out.println(output);
 

@@ -6,6 +6,7 @@ public class Report implements ReportInterface {
 
     private ReportData reportData = new ReportData();
     private DrinkReportData[] drinkReportData = reportData.createDrinkReportData();
+    private BigDecimal test;
 
     public String printReport() {
         String result = "";
@@ -19,16 +20,15 @@ public class Report implements ReportInterface {
                 }
 
         }
-        String end = result + "Total profit for the day: $" + total;
-        return end;
+        return result + "Total profit for the day: $" + total;
     }
 
     public void drinkSold(DrinkType drinkType, BigDecimal price) {
-            for (DrinkReportData item: drinkReportData){
-                if(item.drinkType == drinkType) {
-                    item.numberOfDrinksSold += 1;
-                    item.setTotalAmount(price.plus());
-                }
+        for (DrinkReportData item: drinkReportData){
+            if(item.drinkType == drinkType) {
+                item.numberOfDrinksSold += 1;
+                item.setTotalAmount(price.plus());
+            }
         }
     }
 }

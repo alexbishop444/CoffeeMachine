@@ -6,8 +6,8 @@ public class Drink {
     public BigDecimal price;
     public DrinkType drinktype;
     public DrinkOption[] drinkOptions;
-    public int waterRequirement;
-    public int milkRequirement;
+    public int waterMlRequired;
+    public int milkMlRequired;
 
     @Override
     public String toString() {
@@ -18,11 +18,11 @@ public class Drink {
                 '}';
     }
 
-    public Drink(DrinkType drinktype, BigDecimal price, DrinkOption[] drinkOptions,int waterRequirement, int milkRequirement) {
+    public Drink(DrinkType drinktype, BigDecimal price, DrinkOption[] drinkOptions, int waterMlRequired, int milkMlRequired) {
         this.price = price;
         this.drinktype = drinktype;
         this.drinkOptions = drinkOptions;
-        this.waterRequirement = waterRequirement;
-        this.milkRequirement = milkRequirement;
+        this.waterMlRequired = waterMlRequired;
+        this.milkMlRequired = milkMlRequired;
     }
 }
