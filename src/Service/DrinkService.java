@@ -16,7 +16,7 @@ public class DrinkService implements DrinkServiceInterface {
             DrinkOption drinkOptionExtraHot = new DrinkOption(DrinkOptionType.EXTRAHOT, "Extra hot? y or n?");
             DrinkOption drinkOptionHasSugar = new DrinkOption(DrinkOptionType.NUMBEROFSUGARS, "How many sugars do you want?");
             drinks[0] = new Drink(DrinkType.COFFEE, new BigDecimal("0.6"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar},20,20);
-            drinks[1] = new Drink(DrinkType.TEA, new BigDecimal("0.4"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar},110,30);
+            drinks[1] = new Drink(DrinkType.TEA, new BigDecimal("0.4"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar},10,30);
             drinks[2] = new Drink(DrinkType.CHOCOLATE, new BigDecimal("0.5"), new DrinkOption[]{drinkOptionExtraHot, drinkOptionHasSugar},30,20);
             drinks[3] = new Drink(DrinkType.ORANGE, new BigDecimal("0.6"), new DrinkOption[]{},0,0);
         }

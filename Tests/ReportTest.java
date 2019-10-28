@@ -1,4 +1,5 @@
 import Models.DrinkType;
+import Reports.Report;
 import org.junit.Assert;
 import org.junit.Test;
 
