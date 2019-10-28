@@ -1,3 +1,11 @@
+import Converters.OrderConverter;
+import Converters.OrderConverterInterface;
+import Core.CoffeeMachine;
+import Core.CoffeeMachineInterface;
+import Core.DrinkMaker;
+import Core.DrinkMakerInterface;
+import Reports.Report;
+import Reports.ReportInterface;
 import Service.DrinkService;
 import Service.DrinkServiceInterface;
 import Service.OrderService;

@@ -1,4 +1,8 @@
+package Core;
+
+import Converters.OrderConverterInterface;
 import Models.*;
+import Reports.ReportInterface;
 import Service.DrinkServiceInterface;
 import Service.OrderServiceInterface;
 
@@ -35,7 +39,7 @@ public class CoffeeMachine implements CoffeeMachineInterface{
         System.out.println(reportInterface.printReport());
     }
 
-    public boolean isEmpty(DrinkType drinkType) {
+    private boolean isEmpty(DrinkType drinkType) {
         Drink drink = drinkServiceInterface.getDrink(drinkType);
         if(drink.milkMlRequired > currentMilkMl || drink.waterMlRequired > currentWaterMl) {
             return true;
